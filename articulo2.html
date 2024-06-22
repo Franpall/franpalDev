@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franpal DEV</title>
+    <link rel="stylesheet" href="stylesart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fondo"></div>
+    <header>
+        <div id="MenuHamburguesa" class="burgerShow">
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger" onclick="return abrirMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+        </div>
+        <div class="Logotipo">
+            <img src="Resources/BackgroundEraser_20230118_144559464.png" alt="logo de franpal" >
+            <h1>Franpal DEV</h1>
+        </div>
+        <div class="relleno">
+
+        </div>
+        <div id="menu" class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="index.html#inicio" class="seleccionado">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article class="articulo">
+                <div class="imagen"><img src="Resources/proyecto1img2.png" alt="imagen de muestra de la web"></div>
+                <h2>Experimento Social</h2>
+                <div class="enlace">
+                    <a href="https://grand-lollipop-7f810b.netlify.app/">Ir la Página Web</a>
+                </div>
+                <br>
+                <p>
+                    Página web que simula ser una tienda que regala productos con el fin de demostrar que no todo en internet es real y que debemos tener cuidado al ingresar a enlaces desconocidos, y más cuando nos piden ingresar datos personales
+                </p>
+                <br>
+                <p>
+                    Fácilmente se demostró que una sola persona puede difundir el enlace y este llegará a miles de personas, lo cual es muy peligroso cuando se trata de una estafa o robo de cuentas (physhing)
+                </p>
+                <br>
+            </article>
+        </section>
+    </main>
+    <div class="barraNavegacion">
+        <div class="boton_back">
+            <a href="index.html">
+                Atrás
+            </a>
+        </div>
+        <div class="direccion">
+            <p>Franpal DEV/Proyectos/Griskol</p>
+        </div>
+    </div>
+    <footer>
+        <p>Franpal DEV - Todos los Derechos Reservados 2023</p>
+    </footer>
+</body>
+<script src="burgermenu.js"></script>
+<script src="scripts.js"></script>
+</html>

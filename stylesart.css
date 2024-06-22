@@ -1,0 +1,368 @@
+/* AJUSTES GLOBALES */
+
+:root{
+    --colorPrincipal:rgb(6, 188, 243);
+    --colorFondo:rgba(0, 0, 0, 0.8);
+    --colorBoton:rgb(0, 146, 230);
+    --colorBotonPulsado:transparent;
+    --colorTexto:#f1f1f1;
+}
+
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    color: var(--colorTexto);
+}
+
+/* MÉTODO FIRST MOBILE--------------- */
+
+/* cabezera */
+
+header{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100vw;
+    height: 70px;
+    background-color: black;
+    z-index: 4;
+}
+
+.Logotipo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logotipo img{
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.Logotipo h1{
+   font-size: 1.5rem;
+}
+
+.burgerShow{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 3;
+    width: 40px;
+}
+
+.burgerHide{
+    display: none;
+}
+
+.relleno{
+    width: 40px;
+}
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+
+.navBar{
+    display: none;
+}
+
+.navBarMobile{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80vw;
+    min-width: 300px;
+    height: calc(100vh - 70px);
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+    animation: abrirMenu 200ms 1 ease-in;
+}
+
+.navBarMobile nav{
+    padding-left: 20px;
+}
+
+.navBarMobile nav ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.navBarMobile nav ul li{
+    list-style-type: none;
+}
+
+.navBarMobile nav ul li a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.seleccionado{
+    color: var(--colorPrincipal);
+}
+
+/* FONDO */
+
+.fondo{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(rgb(29, 111, 158), rgb(7, 7, 153));
+}
+
+main{
+
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* todo el articulo */
+
+.articulo{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.imagen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imagen img{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+h2{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+h3{
+    margin-top: 20px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2.5rem;
+    color: var(--colorPrincipal);
+    text-shadow: 2px 2px 5px black;
+}
+
+.enlace a{
+    font-size: 1.4rem;
+    text-decoration-color: var(--colorPrincipal);
+    box-shadow: 2px 2px 5px var(--colorFondo);
+}
+
+.enlace a:active, .enlace a:hover{
+    background-color: var(--colorPrincipal);
+    transition: all 100ms ease-in-out;
+}
+
+
+/* Autores en lista */
+
+.lista_autores li{
+    list-style-type:square;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+/* Galeria */
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 0 auto;
+    background-image: url(Resources/png-image-squares-background-free-vector.jpg);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.nozoom img{
+    height: 200px;
+}
+
+.zoom{
+    position: fixed;
+    top: 20px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--colorFondo);
+    animation: aparecer 1 300ms ease-in;
+    margin: 0 auto;
+
+}
+
+.zoom img{
+    width: 90%;
+    max-width: 400px;
+    max-height: 70%;
+    box-shadow: 2px 2px 5px var(--colorPrincipal);
+    object-fit: cover;
+}
+
+@keyframes aparecer {
+    20%{
+        transform: scale(110%);
+    }
+    40%{
+        transform: scale(120%);
+    }
+    60%{
+        transform: scale(140%);
+    }
+    80%{
+        transform: scale(160px);
+    }
+    100%{
+        transform: scale(200px);
+    }
+}
+
+/* barra inferior */
+
+.barraNavegacion{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 40px;
+    background-color: var(--colorFondo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+
+.boton_back{
+    max-width: 20px;
+}
+
+.boton_back a{
+    width: 300px;
+    margin-left:20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.direccion{
+    max-width: 80%;
+}
+
+.direccion p{
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+    min-width: 200px;
+    font-size: 0.8rem;
+    margin-right: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid white 1px;
+}
+
+/* pie de página */
+
+footer{
+    width: 100%;
+    padding:10px 0;
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+footer p{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franpal DEV</title>
+    <link rel="stylesheet" href="stylesart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,600&family=Pixelify+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="fondo"></div>
+    <header>
+        <div id="MenuHamburguesa" class="burgerShow">
+            <label class="burger" for="burger">
+                <input type="checkbox" id="burger" onclick="return abrirMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+        </div>
+        <div class="Logotipo">
+            <img src="Resources/BackgroundEraser_20230118_144559464.png" alt="logo de franpal" >
+            <h1>Franpal DEV</h1>
+        </div>
+        <div class="relleno">
+
+        </div>
+        <div id="menu" class="navBar">
+            <nav>
+                <ul>
+                    <li><a href="index.html#inicio" class="seleccionado">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <article class="articulo">
+                <div class="imagen"><img src="Resources/proyecto1img1.png" alt=""></div>
+                <h2>Proyecto Griskol</h2>
+                <div class="enlace">
+                    <a href="https://cerulean-creponne-0eee46.netlify.app/">Ir la Página Web</a>
+                </div>
+                <br>
+                <p>
+                        Se trata de una página web para promocionar los servicios de la empresa griskol ubicada en Santa Ana del Táchira, dicha empresa se encarga de la reparación y mantenimiento de maquinas de contar billetes
+                </p>
+                <br>
+                <p>
+                        Fue Realizada con el fin de aprobar el Trayecto Nro 1 de la carrera de informática en La Universidad Politécnica Territorial Agroindustrial Del Estado Táchira (UPTAI) por 4 estudiantes de la misma. Dichos estudiantes son
+                </p>
+                <br>
+                <ul class="lista_autores">
+                    <li>Francisco Skopal (FRANPAL)</li>
+                    <li>Keiver Calderón (Kiba)</li>
+                    <li>Daniel Moreno (El papu)</li>
+                </ul>
+                <h3>PROCESO</h3>
+                <p>Click en la imagen Para Hacer ZOOM </p>
+                <br>
+                <div class="galeria">
+                    <div id="f1" class="nozoom" onclick="return zoom(1)">
+                        <img src="Resources/IMG-20230518-WA0002.jpeg" alt="" >
+                    </div>
+                    <div id="f2" class="nozoom" onclick="return zoom(2)">
+                        <img src="Resources/IMG-20230717-WA0007.jpeg" alt="" >
+                    </div>
+                    <div id="f3" class="nozoom" onclick="return zoom(3)">
+                        <img src="Resources/IMG-20230619-WA0004.jpeg" alt="" >
+                    </div>
+                    <div id="f4" class="nozoom" onclick="return zoom(4)">
+                        <img src="Resources/IMG-20230430-WA0027.jpeg" alt="" >
+                    </div>
+                    <div id="f5" class="nozoom" onclick="return zoom(5)">
+                        <img src="Resources/IMG_2023-06-15-13-42-20-756.jpg" alt="" >
+                    </div>
+                    <div id="f6" class="nozoom" onclick="return zoom(6)">
+                        <img src="Resources/IMG_2023-06-28-11-25-34-890.jpg" alt="">
+                    </div>
+                    <div id="f7" class="nozoom" onclick="return zoom(7)">
+                        <img src="Resources/IMG_2023-09-05-10-37-23-243.jpg" alt="">
+                    </div>
+                    <div id="f8" class="nozoom" onclick="return zoom(8)">
+                        <img src="Resources/logo con blur y billetes.png" alt="">
+                    </div>
+                    <div id="f9" class="nozoom" onclick="return zoom(9)">
+                        <img src="Resources/PXL_20230309_070518792.jpg" alt="">
+                    </div>
+                    <div id="f10" class="nozoom" onclick="return zoom(10)">
+                        <img src="Resources/IMG-20230615-WA0004.jpg" alt="">
+                    </div>
+                    <div id="f11" class="nozoom" onclick="return zoom(11)">
+                        <img src="Resources/PXL_20230515_135506096.jpg" alt="">
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <div class="barraNavegacion">
+        <div class="boton_back">
+            <a href="index.html">
+                Atrás
+            </a>
+        </div>
+        <div class="direccion">
+            <p>Franpal DEV/Proyectos/Griskol</p>
+        </div>
+    </div>
+    <footer>
+        <p>Franpal DEV - Todos los Derechos Reservados 2023</p>
+    </footer>
+</body>
+<script src="burgermenu.js"></script>
+<script src="scripts.js"></script>
+</html>
