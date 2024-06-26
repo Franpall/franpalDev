@@ -65,8 +65,9 @@ header{
 
 .burger {
   position: relative;
-  width: 40px;
-  height: 30px;
+  margin-left: 5px;
+  width: 30px;
+  height: 25px;
   background: transparent;
   cursor: pointer;
   display: block;
@@ -107,9 +108,9 @@ header{
 }
 
 .burger input:checked ~ span:nth-of-type(1) {
-  transform: rotate(45deg);
-  top: 0px;
-  left: 5px;
+  transform: rotate(40deg);
+  top: 50%;
+  width: 20px;
 }
 
 .burger input:checked ~ span:nth-of-type(2) {
@@ -118,9 +119,10 @@ header{
 }
 
 .burger input:checked ~ span:nth-of-type(3) {
-  transform: rotate(-45deg);
-  top: 28px;
-  left: 5px;
+  transform: rotate(-40deg);
+  top: 50%;
+  width: 20px;
+
 }
 
 .navBar{
@@ -236,128 +238,167 @@ main{
   text-shadow: 1px 1px 5px black;
 }
 
-/* Formulario pop up */
+/* area de widget de perfil */
 
-.formulario_hide{
-  display: none;
+.area_perfil{
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.formulario_show{
-  width: 100vw;
-  height: calc(100vh - 70px);
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0,0.8);
-  z-index: 3;
-}
-
-.formulario_popup{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.widget_perfil{
   width: 80%;
-  gap: 20px;
-  animation: abrirForm 200ms 1 ease-in;
-  background-color: var(--colorFondo);
-  border-radius:20px ;
-  box-shadow: 1px 1px 5px var(--colorPrincipal);
-}
-
-.formulario_popup form{
-  padding: 20px 0;
+  height: auto;
+  min-width: 300px;
+  max-width: 600px;
+  border-radius: 15px;
+  background-color: rgb(2, 13, 24);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.perfil{
+  width: 90%;
+  height: 40%;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  gap: 10%;
+}
+
+.perfil_elements{
+  width: 90%;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 20px;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  gap: 10%;
+}
+
+.imagen_usuario{
+  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.imagen_usuario img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.imagen_usuario img:hover{
+  border-radius: 10px;
+  transition: all 300ms ease-in;
+  cursor: pointer;
+}
+
+.imagen_usuarioZoom{
+  display: flex;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.658);
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.imagen_usuarioZoom img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  max-width: 600px;
+  max-height: 600px ;
+}
+
+
+.skills{
+  margin: 10px;
+  width: 90%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
-.input {
-  border: none;
-  outline: none;
-  border-radius: 15px;
-  padding: 1em;
-  background-color: #ccc;
-  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
-  transition: 300ms ease-in-out;
-}
-
-.input:focus {
-  background-color: white;
-  transform: scale(1.05);
-  box-shadow: 13px 13px 100px #969696,
-             -13px -13px 100px #ffffff;
-}
-
-.send_form{
-  border-radius: 20px;
-  border: solid 2px black;
-  background-color: var(--colorBoton);
-  padding: 10px 50px;
-}
-
-.button {
-  position: relative;
-  width: 6em;
-  height: 4em;
-  border: none;
-  background: none;
-}
-
-.X {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  width: 2em;
-  height: 1.5px;
-  background-color: #fff;
-  transform: rotate(45deg);
-}
-
-.Y {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  width: 2em;
-  height: 1.5px;
-  background-color: #fff;
-  transform: rotate(-45deg);
-}
-
-.close {
-  position: absolute;
+.skill{
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: -40%;
-  left: 70%;
-  width: 3em;
-  height: 1.7em;
-  font-size: 16px;
-  background-color: rgb(254, 255, 225);
-  color: #000;
-  border: 1px solid #000;
-  pointer-events: none;
-  opacity: 0;
+  height: 1.5em;
+  padding: 0px 10px;
+  border-radius: 20px;  
 }
 
-.button:hover {
-  background-color: rgb(210, 0, 0);
+.skill:hover{
+  filter: brightness(130%);
+  text-shadow: 1px 1px 2px black;
+  transition: all 300ms ease-in;
+  cursor: pointer;
 }
 
-.button:active {
-  background-color: rgb(130, 0, 0);
+#html_skill{
+  background-color: rgb(230, 92, 12);
+}
+#css_skill{
+  background-color: rgb(13, 93, 124);
 }
 
-/* Proyectos */
+#html_skill{
+  background-color: rgb(230, 92, 12);
+}
+
+#js_skill{
+  background-color: rgb(173, 143, 9);
+}
+
+#bt_skill{
+  background-color: rgb(21, 56, 151);
+}
+#vue_skill{
+  background-color: rgb(67, 35, 119);
+}
+#python_skill{
+  background-color: rgb(47, 122, 24);
+}
+#cpp_skill{
+  background-color: rgb(13, 41, 78);
+}
+#python_skill{
+  background-color: rgb(47, 122, 24);
+}
+#responsive_skill{
+  background-color: rgb(122, 24, 65);
+}
+#figma_skill{
+  background-color: rgb(72, 75, 72);
+}
+
+/* Proyectos o articulos*/
+
+
 
 #proyectos{
   width: 100vw;
@@ -404,109 +445,150 @@ main{
 
 /* contacto */
 
-.botones_contacto{
-  width: 100vw;
-  height: calc(100vh - 70px);
+#contacto{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  padding: 10px 20px;
 }
 
-.botones_contacto div:nth-child(1)
-{
-  background-color: rgb(31, 31, 155);
+.texto_contacto{
+  font-size: 1.5rem;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 60%;
-  font-size: 1.4em;
-  box-shadow: -2px -2px 5px rgb(31, 31, 155);
+  gap: 0.5em;
 }
 
-.botones_contacto div:nth-child(2)
-{
-  background-color: rgb(48, 133, 76);
+.up {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 60%;
-  font-size: 1.5em;
-  box-shadow: -2px -2px 5px rgb(48, 133, 76);
+  flex-direction: row;
+  gap: 0.5em;
 }
 
-.botones_contacto div:nth-child(3)
-{
-  background-color: rgb(54, 54, 117);
+.down {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 60%;
-  font-size: 1.5em;
-  box-shadow: -2px -2px 5px rgb(54, 54, 117);
+  flex-direction: row;
+  gap: 0.5em;
 }
 
-.botones_contacto div a:nth-child(1)
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 60%;
-  font-size: 2em;
-  text-decoration: none;
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
 }
 
-.botones_contacto div a:nth-child(2)
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 60%;
-  font-size: 2em;
-  text-decoration: none;
+.whatsapp {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #00ff00;
 }
 
-.botones_contacto div a:nth-child(3)
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 60%;
-  font-size: 2em;
-  text-decoration: none;
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
 }
 
-.botones_contacto div:nth-child(1):hover, .botones_contacto div:nth-child(1):active
-{
-  background-color: rgb(34, 34, 212);
-  box-shadow: 2px 2px 5px black;
+.linkedin {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #0077b5;
 }
 
-.botones_contacto div:nth-child(2):hover, .botones_contacto div:nth-child(2):active
-{
-  background-color: rgb(40, 167, 82);
-  box-shadow: 2px 2px 5px black;
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
 }
 
-.botones_contacto div:nth-child(3):hover, .botones_contacto div:nth-child(3):active
-{
-  background-color: rgb(72, 72, 201);
-  box-shadow: 2px 2px 5px black;
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
 }
 
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #00ff00;
+}
+
+.card1:hover .whatsapp {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #0077b5;
+}
+
+.card2:hover .linkedin {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
 
 /* pie de página */
 

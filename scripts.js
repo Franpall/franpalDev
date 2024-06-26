@@ -7,3 +7,13 @@ function zoom(num_foto){
         document.getElementById(identificador).className = "nozoom"
     }
 }
+
+function hacerZoomUsuario(){
+    elemento = document.getElementById("zoom")
+    if (elemento.className == "imagen_usuario"){
+        elemento.className = "imagen_usuarioZoom" 
+    }
+    else{
+        elemento.className = "imagen_usuario"      
+    }
+}
