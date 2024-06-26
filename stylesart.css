@@ -184,21 +184,22 @@ header{
     background: radial-gradient(rgb(29, 111, 158), rgb(7, 7, 153));
 }
 
-main{
-
+section{
     width: 90%;
     margin: 0 auto;
     margin-top: 90px;
     margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* todo el articulo */
 
 .articulo{
+    width: 90%;
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     padding: 10px;
@@ -207,6 +208,7 @@ main{
 
 .imagen{
     width: 100%;
+    margin: 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,13 +216,13 @@ main{
 
 
 .imagen img{
-    width: 90vw;
+    width: 100%;
     margin: 0 auto;
 }
 
 h2{
     font-family: 'Pixelify Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 5px black;
 }
 
@@ -273,7 +275,7 @@ h3{
 
 
 .nozoom img{
-    height: 200px;
+    max-width: 100%;
 }
 
 .zoom{
@@ -366,7 +368,7 @@ footer{
     width: 100%;
     padding:10px 0;
     background-color: black;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 footer p{
@@ -384,7 +386,7 @@ footer p{
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 60px;
 }
 
 .card {
