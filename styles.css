@@ -15,6 +15,10 @@
     color: var(--colorTexto);
 }
 
+html{
+  scroll-snap-type: y mandatory;
+}
+
 /* MÉTODO FIRST MOBILE--------------- */
 
 /* cabezera */
@@ -188,6 +192,12 @@ main{
   align-items: center;
   gap: 20px;
 }
+
+
+.seccion{
+  scroll-snap-align: center;
+}
+
 /* Bienvenida */
 
 .bienvenida{
@@ -411,6 +421,7 @@ main{
 
 .tarjeta{
   width: 95%;
+  max-width: 800px;
   background-color: var(--colorFondo);
   border-radius: 20px;
   box-shadow: 1px 1px 5px white;
