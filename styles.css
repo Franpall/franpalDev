@@ -198,7 +198,7 @@ main{
 
 
 .seccion{
-  scroll-snap-align: center;
+  scroll-snap-align: end;
   min-height: 100vh - 70px;
   display: flex;
   justify-content: center;
@@ -257,9 +257,17 @@ main{
 
 /* area de widget de perfil */
 
+#area_perfil{
+  background: radial-gradient(rgb(24, 26, 27), rgb(36, 36, 99), rgb(21, 99, 92));
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .area_perfil{
   width: 100%;
-  height: 100%;
+  height: auto;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -270,7 +278,6 @@ main{
 
 .widget_perfil{
   width: 80%;
-  height: 80%;
   min-width: 300px;
   max-width: 600px;
   border-radius: 15px;
@@ -644,26 +651,5 @@ footer p{
   }
   100%{
     transform: translateX(-50px);
-  }
-}
-
-@keyframes abrirForm{
-  0%{
-    transform: translateY(-500px);
-  }
-  20%{
-    transform: translateY(-400px);
-  }
-  40%{
-    transform: translateY(-300px);
-  }
-  60%{
-    transform: translateY(-200px);
-  }
-  80%{
-    transform: translateY(-100px);
-  }
-  100%{
-    transform: translateY(-50px);
   }
 }

@@ -1,5 +1,7 @@
 /* AJUSTES GLOBALES */
 
+@import url("/styles.css");
+
 :root{
     --colorPrincipal:rgb(6, 188, 243);
     --colorFondo:rgba(0, 0, 0, 0.8);
@@ -184,6 +186,7 @@ header{
     background: radial-gradient(rgb(29, 111, 158), rgb(7, 7, 153));
 }
 
+
 section{
     width: 90%;
     margin: 0 auto;
@@ -302,23 +305,6 @@ h3{
     object-fit: cover;
 }
 
-@keyframes aparecer {
-    20%{
-        transform: scale(110%);
-    }
-    40%{
-        transform: scale(120%);
-    }
-    60%{
-        transform: scale(140%);
-    }
-    80%{
-        transform: scale(160px);
-    }
-    100%{
-        transform: scale(200px);
-    }
-}
 
 /* barra inferior */
 
@@ -457,3 +443,25 @@ footer p{
     margin-left: 20px;
     font-size: 16px;
   }
+
+
+/* animaciones locales*/
+
+
+@keyframes aparecer {
+    20%{
+        transform: scale(110%);
+    }
+    40%{
+        transform: scale(120%);
+    }
+    60%{
+        transform: scale(140%);
+    }
+    80%{
+        transform: scale(160px);
+    }
+    100%{
+        transform: scale(200px);
+    }
+}
