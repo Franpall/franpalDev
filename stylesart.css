@@ -55,6 +55,7 @@ header{
     align-items: center;
     z-index: 3;
     width: 40px;
+    margin-left: 20px;
 }
 
 .burgerHide{
@@ -63,6 +64,7 @@ header{
 
 .relleno{
     width: 40px;
+    margin-left: 20px;
 }
 
 .burger {
