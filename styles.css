@@ -28,7 +28,7 @@ header{
   top: 0px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 10px;
   width: 100vw;
   height: 70px;
@@ -57,6 +57,7 @@ header{
   align-items: center;
   z-index: 3;
   width: 40px;
+  margin-left: 20px;
 }
 
 .burgerHide{
@@ -65,6 +66,7 @@ header{
 
 .relleno{
   width: 40px;
+  margin-right: 20px;
 }
 
 .burger {
