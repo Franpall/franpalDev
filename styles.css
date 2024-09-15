@@ -265,6 +265,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .area_perfil{
@@ -337,14 +338,15 @@ main{
 .imagen_usuarioZoom{
   display: flex;
   position: fixed;
+  height: calc(100% - 70px);
+  width: 100%;
   left: 0px;
-  top: 0px;
+  top: 70px;
   background-color: rgba(0, 0, 0, 0.658);
   justify-content: center;
   align-items: center;
   border-radius: 0;
-  width: 100vw;
-  height: 100vh;
+
 }
 
 .imagen_usuarioZoom img{
@@ -352,10 +354,10 @@ main{
   align-items: center;
   justify-content: center;
   width: 80%;
+  max-width: 500px;
   aspect-ratio: 1/1;
   border-radius: 10px;
-  max-width: 600px;
-  max-height: 600px ;
+  cursor: pointer;
 }
 
 
