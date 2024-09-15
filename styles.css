@@ -473,7 +473,7 @@ main{
 /* contacto */
 
 #contacto{
-  height: calc(100vh - 140px);
+  height:100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -619,6 +619,50 @@ main{
   fill: white;
 }
 
+/* Informacion de la empresa */
+
+#informacionEmpresa{
+  height: calc(100vh - 140px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.areaIzquierdaInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.areaIzquierdaInfo img{
+  width: 80%;
+  max-width: 300px;
+}
+
+.areaDerechaInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.areaDerechaInfo p{
+  text-align: center;
+  font-size: 1.5em;
+  width: 80%;
+}
+
+.areaDerechaInfo b{
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 1.8em;
+}
+
+
 /* pie de página */
 
 footer{
@@ -658,5 +702,23 @@ footer p{
   }
   100%{
     transform: translateX(-50px);
+  }
+}
+
+/* Adaptaciones a otros tamaños de pantalla */
+
+@media (min-width:600px){
+  #informacionEmpresa{
+    flex-direction:row;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .areaIzquierdaInfo img{
+    min-width: 200px;
+  }
+
+  .areaDerechaInfo p{
+    text-align: left;
   }
 }
