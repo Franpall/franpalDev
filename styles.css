@@ -424,6 +424,18 @@ main{
   background-color: rgb(72, 75, 72);
 }
 
+#sql_skill{
+  background-color: rgb(4, 51, 153);
+}
+
+#arduino_skill{
+  background-color: rgb(72, 75, 72);
+}
+
+#flask_skill{
+  background-color: rgb(177, 71, 22);
+}
+
 /* Proyectos o articulos*/
 
 
