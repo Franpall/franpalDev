@@ -1,10 +1,13 @@
 function zoom(num_foto){
     identificador = 'f' + num_foto;
+    mensaje = document.getElementById("mensajeImg" + num_foto);
     if(document.getElementById(identificador).className == "nozoom"){
         document.getElementById(identificador).className = "zoom";
+        mensaje.className = "mensajeImgOn";
     }
     else{
         document.getElementById(identificador).className = "nozoom";
+        mensaje.className = "mensajeImgOff"; 
     }
 }
 

@@ -7,7 +7,7 @@
 /* FONDO */
 
 section{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 90px;
     margin-bottom: 50px;
@@ -20,13 +20,14 @@ section{
 /* todo el articulo */
 
 .articulo{
-    width: 90%;
+    width: 100%;
     max-width:800px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     padding: 20px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .imagen{
@@ -61,6 +62,7 @@ h3{
 
 .enlace a{
     font-size: 1.4rem;
+    padding: 0 5px;
     text-decoration-color: var(--colorPrincipal);
     box-shadow: 2px 2px 5px var(--colorFondo);
 }
@@ -110,26 +112,28 @@ h3{
 
 .zoom{
     position: fixed;
-    top: 20px;
+    top: 70px;
     left: 0px;
+    bottom:40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
     width: 100%;
-    height: 100%;
     z-index: 2;
     background-color: var(--colorFondo);
     animation: aparecer 1 300ms ease-in;
     margin: 0 auto;
-
+    cursor: pointer;
 }
 
 .zoom img{
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
     max-height: 70%;
-    box-shadow: 1px 1px 5px var(--colorPrincipal);
+    border: solid 2px var(--colorPrincipal);
     object-fit: cover;
+    cursor: pointer;
 }
 
 
@@ -290,5 +294,23 @@ footer p{
     }
     100%{
         transform: scale(200px);
+    }
+}
+
+/* Modificaciones Responsive para pantallas más grandes*/
+
+@media(min-width:500px){
+    .zoom img{
+        width: 80%;
+    }
+    .articulo{
+        width: 96%;
+    }
+}
+
+@media(min-width:700px){
+    .zoom img{
+        width: 60%;
+        max-width: 700px;
     }
 }
