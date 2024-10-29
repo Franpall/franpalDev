@@ -337,6 +337,10 @@ main{
 
 .imagen_usuarioZoom{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
   position: fixed;
   height: calc(100% - 70px);
   width: 100%;
@@ -346,7 +350,7 @@ main{
   justify-content: center;
   align-items: center;
   border-radius: 0;
-
+  cursor: pointer;
 }
 
 .imagen_usuarioZoom img{
@@ -358,6 +362,16 @@ main{
   aspect-ratio: 1/1;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.mensajeImgOff{
+  display: none;
+}
+
+.mensajeImgOn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -631,6 +645,47 @@ main{
 
 .card4:hover .discord {
   fill: white;
+}
+
+/* Boton de telegram */
+.telegram {
+  transition: none 0.5s ease;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 130px;
+  height: 50px;
+  gap: 10px;
+  border: none;
+  background-color: rgb(42 171 238);
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.telegram-text {
+  transition: none 0.3s ease;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.telegram:hover .telegram-text {
+  display: none;
+  position: absolute;
+}
+
+.telegram-svg {
+  width: 23px;
+  height: 23px;
+  transition: 0.8s;
+}
+
+.telegram:hover .telegram-svg {
+  margin-left: 40px;
+  display: block;
+  transform: rotate(50deg);
 }
 
 /* Informacion de la empresa */

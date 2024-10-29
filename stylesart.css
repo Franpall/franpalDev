@@ -25,7 +25,7 @@ section{
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
@@ -48,6 +48,7 @@ h2{
     font-family: 'Pixelify Sans', sans-serif;
     font-size: 2.5rem;
     text-shadow: 2px 2px 5px black;
+    margin-bottom: 10px;
 }
 
 h3{
@@ -66,7 +67,7 @@ h3{
 
 .enlace a:active, .enlace a:hover{
     background-color: var(--colorPrincipal);
-    transition: all 100ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 
@@ -83,7 +84,7 @@ h3{
 
 .galeria{
     display: flex;
-    max-width: 600px;
+    max-width: 500px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -101,6 +102,10 @@ h3{
 
 .nozoom img{
     max-width: 100%;
+}
+
+.nozoom img{
+    cursor: pointer;
 }
 
 .zoom{
@@ -123,7 +128,7 @@ h3{
     width: 90%;
     max-width: 400px;
     max-height: 70%;
-    box-shadow: 2px 2px 5px var(--colorPrincipal);
+    box-shadow: 1px 1px 5px var(--colorPrincipal);
     object-fit: cover;
 }
 
