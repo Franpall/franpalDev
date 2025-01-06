@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+	<title>LogoVectorialOPT2</title>
+	<style>
+		.s0 { fill: #66c0ff } 
+		.s1 { fill: #0d64e8 } 
+	</style>
+	<g>
+		<path id="Forma 1" fill-rule="evenodd" class="s0" d="m116 425h64l33.7-126.6h177.6l42.9-157.2-241.9 1.1-16.3 62.2 166.1 0.2-6.4 28.1-167.4 0.5"/>
+		<path id="Forma 2" fill-rule="evenodd" class="s1" d="m134.7 359.6l-69-0.9 76.6-278.7h239.8l-17.4 62-171.7 2-15.3 59h167l-8.4 31.3h-165.3"/>
+	</g>
+</svg>
