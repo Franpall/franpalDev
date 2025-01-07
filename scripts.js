@@ -1,3 +1,8 @@
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+let yearElement = document.getElementById("currentDate")
+yearElement.innerText = `${year}`
+
 function zoom(num_foto){
     identificador = 'f' + num_foto;
     mensaje = document.getElementById("mensajeImg" + num_foto);
