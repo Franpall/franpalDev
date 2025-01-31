@@ -1,10 +1,15 @@
 function abrirMenu(){
     if(document.getElementById("menu").className == "navBar")
     {
-        document.getElementById("menu").className = "navBarMobile";
+        document.getElementById("menu").className = "navBarMobile"; // Abrir menu hamburguesa
     }
     else{
-        document.getElementById("menu").className = "navBar";
+        document.getElementById("menu").className = "navBar"; //cerrar menu hamburguesa
+        // Obtener el elemento checkbox
+        const checkbox = document.getElementById('burger');
+
+        // Quitar el marcado del checkbox
+        checkbox.checked = false;
     }
 
 }
