@@ -29,4 +29,5 @@ function cambiarSeleccion(opcion)
 
     var identificacion = "opcion" + opcion;
         document.getElementById(identificacion).className = "seleccionado";
+    abrirForm()
 }
