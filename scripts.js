@@ -37,3 +37,31 @@ function redireccionar(destino){
     }
 
 }
+
+// Función imán al hacer scroll
+
+window.addEventListener('scroll', function() {
+    const seccionObjetivo = document.getElementById('area_perfil');
+    const rect = seccionObjetivo.getBoundingClientRect();
+  
+    // Verifica si la sección está cerca del centro de la ventana
+    if (rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+      // La sección está cerca, puedes agregar aquí la lógica para "atraerla"
+      seccionObjetivo.classList.add('atraida');
+    } else {
+      seccionObjetivo.classList.remove('atraida');
+    }
+  });
+
+  window.addEventListener('scroll', function() {
+    const seccionObjetivo = document.getElementById('contacto');
+    const rect = seccionObjetivo.getBoundingClientRect();
+  
+    // Verifica si la sección está cerca del centro de la ventana
+    if (rect.top < window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+      // La sección está cerca, puedes agregar aquí la lógica para "atraerla"
+      seccionObjetivo.classList.add('atraida');
+    } else {
+      seccionObjetivo.classList.remove('atraida');
+    }
+  });

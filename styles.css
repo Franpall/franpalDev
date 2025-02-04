@@ -41,6 +41,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 }
 
 .Logotipo img{
@@ -201,10 +202,24 @@ main{
   overflow: hidden;
 }
 
+/* Animaciones del Scroll */
 
-.seccion{
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+#area_perfil {
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+#area_perfil.atraida {
+  transform: scale(1.1); /* Escala la sección ligeramente al ser "atraída" */
+  margin-bottom: 30px;
+}
+
+#contacto {
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+#contacto.atraida {
+  transform: scale(1.1); /* Escala la sección ligeramente al ser "atraída" */
+  margin-bottom: 30px;
 }
 
 /* Bienvenida */
