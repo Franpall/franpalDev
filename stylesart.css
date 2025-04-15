@@ -130,7 +130,7 @@ h3{
 
 .zoom img{
     width: 100%;
-    max-height: 70%;
+    max-height: calc(100vh - 40px - 70px);
     border: solid 2px var(--colorPrincipal);
     object-fit: cover;
     cursor: pointer;
@@ -301,7 +301,7 @@ footer p{
 
 @media(min-width:500px){
     .zoom img{
-        width: 80%;
+        width: 100%;
     }
     .articulo{
         width: 96%;
@@ -310,7 +310,7 @@ footer p{
 
 @media(min-width:700px){
     .zoom img{
-        width: 60%;
-        max-width: 700px;
+        width: 90%;
+        max-width: 900px;
     }
 }
