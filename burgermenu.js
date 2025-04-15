@@ -24,15 +24,15 @@ function abrirForm(){
     } 
 }
 
-function cambiarSeleccion(opcion)
-{
-    for(var i = 1; i < 5; i++ )
-    {
-        var idtemp ="opcion" + i;
-        document.getElementById(idtemp).className = "nothing";  
-    }
+// function cambiarSeleccion(opcion)
+// {
+//     for(var i = 1; i < 5; i++ )
+//     {
+//         var idtemp ="opcion" + i;
+//         document.getElementById(idtemp).className = "nothing";  
+//     }
 
-    var identificacion = "opcion" + opcion;
-        document.getElementById(identificacion).className = "seleccionado";
-    abrirForm()
-}
+//     var identificacion = "opcion" + opcion;
+//         document.getElementById(identificacion).className = "seleccionado";
+//     abrirForm()
+// }

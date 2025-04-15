@@ -276,7 +276,7 @@ main{
 /* area de widget de perfil */
 
 #area_perfil{
-  background: radial-gradient(rgb(24, 26, 27), rgb(36, 36, 99), rgb(21, 99, 92));
+  /* background: radial-gradient(rgb(24, 26, 27), rgb(36, 36, 99), rgb(21, 99, 92)); */
   height: calc(100vh - 70px);
   display: flex;
   align-items: center;
