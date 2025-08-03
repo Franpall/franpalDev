@@ -48,6 +48,8 @@ function redireccionar(destino){
 
 // Función imán al hacer scroll
 
+document.getElementById("opcion1").className = "seleccionado";
+
 window.addEventListener('scroll', function() {
   const seccionObjetivo = document.getElementById('inicio');
   const rect = seccionObjetivo.getBoundingClientRect();
