@@ -763,6 +763,16 @@ footer p{
 }
 
 
+.mensajeImgOff{
+  display: none;
+}
+
+.mensajeImgOn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ANIMACIONES GENERALES */
 
 @keyframes abrirMenu{
