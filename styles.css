@@ -1,11 +1,13 @@
 /* AJUSTES GLOBALES */
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 :root{
     --colorPrincipal:rgb(6, 188, 243);
-    --colorFondo: #19191a;
+    --colorFondo: #0f0f0f;
     --colorTarjeta:#050505;
-    --colorBoton:rgb(0, 146, 230);
-    --colorBotonPulsado:transparent;
+    --colorBoton:rgb(40, 56, 148);
+    --colorBotonPulsado:rgb(67, 68, 158);
     --colorTexto:#f1f1f1;
 }
 
@@ -50,7 +52,9 @@ header{
 }
 
 .Logotipo h1{
- font-size: 1.3rem;
+  font-size: 1.3rem;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 .burgerShow{
@@ -149,7 +153,7 @@ header{
     justify-content: center;
     align-items: flex-start;
     width: 80vw;
-    max-width: 400px;
+    max-width: 320px;
     min-width: 300px;
     height: calc(100vh - 70px);
     background-color: rgba(0, 0, 0, 0.9);
@@ -158,7 +162,7 @@ header{
 }
 
 .navBarMobile nav{
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 .navBarMobile nav ul{
@@ -176,10 +180,14 @@ header{
 .navBarMobile nav ul li a{
     text-decoration: none;
     font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .seleccionado{
-    color: var(--colorPrincipal);
+    background-color: var(--colorBoton);
+    padding: 0 20px;
+    border-radius: 20px;
+    margin-left: -20px;
 }
 
 /* FONDO */
@@ -190,7 +198,7 @@ header{
     z-index: -1;
     width: 100vw;
     height: 100vh;
-    background: radial-gradient(rgb(29, 111, 158), rgb(7, 7, 153));
+    background: radial-gradient(rgb(24, 95, 136), rgb(7, 7, 153));
 }
 
 main{
@@ -227,6 +235,7 @@ main{
 .bienvenida{
   width: 100vw;
   height: calc(100vh - 70px);
+  max-height: 800px;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
@@ -251,11 +260,12 @@ main{
 .text_bienvenida p{
   font-size: 1.6rem;
   text-shadow: 1px 1px 5px black;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .boton_form{
   width: 90%;
-  height: 20%;
+  height: 100px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;
@@ -271,6 +281,14 @@ main{
   padding: 10px 15px;
   text-shadow: 1px 1px 5px black;
   text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.boton_form a:hover{
+  background-color: var(--colorBotonPulsado);
+  color: white;
+  transition: all 300ms ease-in;
+  box-shadow: 2px 2px 5px black;
 }
 
 /* area de widget de perfil */
@@ -278,6 +296,7 @@ main{
 #area_perfil{
   /* background: radial-gradient(rgb(24, 26, 27), rgb(36, 36, 99), rgb(21, 99, 92)); */
   height: calc(100vh - 70px);
+  max-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -425,7 +444,7 @@ main{
 }
 
 #html_skill{
-  background-color: rgb(230, 92, 12);
+  background-color: rgb(179, 72, 39);
 }
 
 #js_skill{
@@ -451,7 +470,7 @@ main{
   background-color: rgb(122, 24, 65);
 }
 #figma_skill{
-  background-color: rgb(72, 75, 72);
+  background-color: rgb(151, 95, 73);
 }
 
 #sql_skill{
@@ -459,7 +478,7 @@ main{
 }
 
 #arduino_skill{
-  background-color: rgb(72, 75, 72);
+  background-color: rgb(65, 117, 115);
 }
 
 #flask_skill{
@@ -518,6 +537,7 @@ main{
 
 #contacto{
   height:100vh;
+  max-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
