@@ -159,8 +159,9 @@ h3{
 .boton_back a{
     width: 300px;
     margin-left:20px;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .direccion{
