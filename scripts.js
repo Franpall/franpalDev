@@ -16,27 +16,6 @@ function zoom(num_foto){
     }
 }
 
-function hacerZoomUsuario(){
-    elemento = document.getElementById("zoom");
-    mensaje = document.getElementById("mensajeImg");
-    if (elemento.className == "imagen_usuario"){
-        elemento.className = "imagen_usuarioZoom";
-        mensaje.className = "mensajeImgOn";
-        document.getElementById('area_perfil').classList.remove('atraida');
-    }
-    else{
-        elemento.className = "imagen_usuario";      
-        mensaje.className = "mensajeImgOff"; 
-    }
-}
-
-function cerrarImagenUsuario(){
-  elemento = document.getElementById("zoom");
-  mensaje = document.getElementById("mensajeImg");
-  elemento.className = "imagen_usuario";      
-  mensaje.className = "mensajeImgOff"; 
-}
-
 function redireccionar(destino){
     switch (destino){
         case "telegram":
